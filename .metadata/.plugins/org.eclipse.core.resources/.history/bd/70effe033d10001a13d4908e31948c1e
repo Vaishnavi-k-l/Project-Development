@@ -1,0 +1,64 @@
+package com.example.demo.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.model.Project;
+import com.example.demo.model.ProjectMember;
+import com.example.demo.model.Subtask;
+import com.example.demo.model.Task;
+import com.example.demo.model.Employee;
+import com.example.demo.model.ProjectDescStake;
+
+@FeignClient("project-management")
+public interface ProjectManagementServiceClient {
+	
+	//access employee data
+	@GetMapping("/api/search/{fname}")
+	public List<Employee> getData(@PathVariable String fname);
+	
+	
+	// access project table
+	
+	@GetMapping("/getProjects/completed")
+	public List<Project> getCompletedProjects();
+	
+	@GetMapping("/getProjects/ongoing")
+	public List<Project> getOngoingProjects();
+	
+	 //get data from mysql
+	@GetMapping("/getProjects/{theId}")
+	public Optional<Project> findById(@PathVariable Long theId);
+	
+	
+	//access ProjectDesc table from mongodb
+	//get data from mongodb
+	
+	@GetMapping("/getProjects/mongodb/{theId}")
+	public Optional<ProjectDescStake> findByProjId(@PathVariable Long theId);
+	
+	
+	
+	//fetch data from Project Member table
+	
+	@GetMapping("/getteams/{theid}")
+	public List<ProjectMember> getAllProjectMember(@PathVariable Long theid );
+	
+	//access Subtask database
+	
+	@RequestMapping("/getsubtasks/{projectId}/{taskId}")
+	public List<Subtask> getAllSubtasks(@PathVariable (value="projectId") long projectId, @PathVariable (value="taskId") long taskId);
+	
+	//access task table
+	
+	@GetMapping("/getTasks/{projectId}")
+	public List<Task> getTaskByProjectId(@PathVariable long projectId );
+	
+	@GetMapping("/getTasks")
+	public List<Task> getallTasks();
+}

@@ -1,0 +1,153 @@
+package com.example.demo;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.example.demo.model.Employee;
+import com.example.demo.model.Project;
+import com.example.demo.model.ProjectDescStake;
+import com.example.demo.model.ProjectMember;
+import com.example.demo.model.Subtask;
+import com.example.demo.model.Task;
+import com.example.demo.service.ProjectManagementServiceClient;
+import com.example.demo.service.SubtaskService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+import ch.qos.logback.core.db.dialect.SybaseSqlAnywhereDialect;
+
+@Component
+public class IntegrationClient {
+	
+	@Autowired
+	private ProjectManagementServiceClient projectManagementServiceClient;
+	
+	@Autowired
+	private SubtaskService subtaskService;
+	
+	
+	//To get all employees
+	public Collection<Employee> getEmployeeFallback() {
+		System.out.println("=======getEmployeeFallback=========");
+		return Arrays.asList();
+	}
+
+	@HystrixCommand(fallbackMethod = "getEmployeeFallback")
+	public Collection<Employee> getEmployees(String fname) {
+		return this.projectManagementServiceClient.getData(fname);
+	}
+	
+	//******************************************************************
+	
+	
+	
+	//To fetch all Project Details
+	public Collection<Project> getProjectDetiailsFallback()
+	{
+		System.out.println("=======getProjectFallback=========");
+		return Arrays.asList();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Collection<Project> getProjectDetiails()
+	{
+		return this.projectManagementServiceClient.getCompletedProjects();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Collection<Project> getOngoingProjects()
+	{
+		return this.projectManagementServiceClient.getOngoingProjects();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Optional<Project> findProjectByIdSQL(Long theId)
+	{
+		return this.projectManagementServiceClient.findById(theId);
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Optional<ProjectDescStake> findProjectByIdMongo(Long theId)
+	{
+		return this.projectManagementServiceClient.findByProjId(theId);
+	}
+	
+	//******************************************************************
+	
+	
+	//To access the project memebers
+	public Collection<Project> getProjectMembersFallback()
+	{
+		System.out.println("=======getProjectMembersFallback=========");
+		return Arrays.asList();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectMembersFallback")
+	public Collection<ProjectMember> getAllProjectMembers(Long theid)
+	{
+		return this.projectManagementServiceClient.getAllProjectMember(theid);
+	}
+	
+	//******************************************************************
+	
+	//To fetch the subtasks
+	
+	public Collection<Subtask> getAllSubtasksFallback(Long projectId, Long taskId)
+	{
+		System.out.println("=======getSubtasksFallback=========");
+		return Arrays.asList();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getAllSubtasks")
+	public Collection<Subtask> getAllSubtasks(Long projectId, Long taskId)
+	{
+		return this.projectManagementServiceClient.getAllSubtasks(projectId, taskId);
+	}
+	
+	//******************************************************************
+	
+	//To fetch the tasks by projectId
+	
+	public Collection<Subtask> getTasksFallback(Long projectId, Long taskId)
+	{
+		System.out.println("=======getTasksFallback=========");
+		return Arrays.asList();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getTasksFallback")
+	public Collection<Task> getTaskByProjectId(Long projectId)
+	{
+		return this.projectManagementServiceClient.getTaskByProjectId(projectId);
+	}
+	
+	@HystrixCommand(fallbackMethod = "getTasksFallback")
+	public Collection<Task> getAllTasks()
+	{
+		return this.projectManagementServiceClient.getallTasks();
+	}
+	
+	//******************************************************************
+	
+	//SUBTASK PART
+	//Falback method
+	public List<Subtask> getAllSubtaksFallbck()
+	{
+		System.out.println("=======getSubTasksFallback=========");
+		return Arrays.asList();
+	}
+	
+	
+	@HystrixCommand(fallbackMethod = "getAllSubtaksFallbck")
+	public List<Subtask> getAllSubtaks()
+	{
+		return this.subtaskService.getAllSubtasks();
+	}
+	
+	public void updateProgress(Long subtaskId, Long progressPercentage, String comment)
+	
+	
+}

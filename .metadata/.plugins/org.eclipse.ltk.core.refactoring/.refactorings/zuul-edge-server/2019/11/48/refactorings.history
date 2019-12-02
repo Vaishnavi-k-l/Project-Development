@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.example.demo.filter&apos; to &apos;zuul-config-server/src/main/java/com.example.demo&apos;&#x0D;&#x0A;- Original project: &apos;zuul-edge-server&apos;&#x0D;&#x0A;- Destination element: &apos;zuul-config-server/src/main/java/com.example.demo&apos;&#x0D;&#x0A;- Original element: &apos;zuul-edge-server/src/main/java/com.example.demo.filter&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=zuul-config-server/src\/main\/java&lt;com.example.demo" element1="/src\/main\/java&lt;com.example.demo.filter" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1574932734579" version="1.0"/>
+</session>

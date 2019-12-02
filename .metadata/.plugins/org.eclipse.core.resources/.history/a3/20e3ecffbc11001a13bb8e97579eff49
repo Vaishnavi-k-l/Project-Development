@@ -1,0 +1,58 @@
+package com.example.demo.repository;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.entity.Project;
+@Repository
+@Transactional
+public class ProjectRepositoryImpl implements ProjectRepositoryCustom {
+	@Autowired
+	public ProjectRepositoryImpl(EntityManager entityManager) {
+		super();
+		this.entityManager = entityManager;
+	}
+
+	@PersistenceContext
+	private EntityManager entityManager;
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Project> getAllCompletedProjects() {
+		boolean val=true;
+		
+		Query query = entityManager.createQuery("from Project as p where p.isCompleted=:val");
+		query.setParameter("val", val);
+	
+		return query.getResultList();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Project> getAllOngingProjects() {
+		boolean val=false;
+		Query query = entityManager.createQuery("from Project as p where p.isCompleted=:val");
+		query.setParameter("val", val);
+	
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Project> getProjectById(Long theId) {
+		// TODO Auto-generated method stub
+		Query query = entityManager.createQuery("from Project as p where p.projectId=:theId");
+		query.setParameter("theId", theId);
+	
+		return query.getResultList();
+	}
+	
+
+
+}

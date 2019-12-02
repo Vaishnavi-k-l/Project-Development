@@ -1,0 +1,84 @@
+package com.example.demo;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.example.demo.model.Employee;
+import com.example.demo.model.Project;
+import com.example.demo.model.ProjectDescStake;
+import com.example.demo.model.ProjectMember;
+import com.example.demo.service.ProjectManagementServiceClient;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+@Component
+public class IntegrationClient {
+	
+	@Autowired
+	private ProjectManagementServiceClient projectManagementServiceClient;
+	
+	
+	//To get all employees
+	public Collection<Employee> getEmployeeFallback() {
+		System.out.println("=======getEmployeeFallback=========");
+		return Arrays.asList();
+	}
+
+	@HystrixCommand(fallbackMethod = "getEmployeeFallback")
+	public Collection<Employee> getEmployees(String fname) {
+		return this.projectManagementServiceClient.getData(fname);
+	}
+	
+	//******************************************************************
+	
+	
+	
+	//To fetch all Project Details
+	public Collection<Project> getProjectDetiailsFallback()
+	{
+		System.out.println("=======getProjectFallback=========");
+		return Arrays.asList();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Collection<Project> getProjectDetiails()
+	{
+		return this.projectManagementServiceClient.getCompletedProjects();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Collection<Project> getOngoingProjects()
+	{
+		return this.projectManagementServiceClient.getOngoingProjects();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Optional<Project> findProjectByIdSQL(Long theId)
+	{
+		return this.projectManagementServiceClient.findById(theId);
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectDetiailsFallback")
+	public Optional<ProjectDescStake> findProjectByIdMongo(Long theId)
+	{
+		return this.projectManagementServiceClient.findByProjId(theId);
+	}
+	
+	//******************************************************************
+	
+	public Collection<Project> getProjectMembersFallback()
+	{
+		System.out.println("=======getProjectMembersFallback=========");
+		return Arrays.asList();
+	}
+	
+	@HystrixCommand(fallbackMethod = "getProjectMembersFallback")
+	public Collection<ProjectMember> getAllProjectMembers(Long theid)
+	{
+		return this.projectManagementServiceClient.getAllProjectMember(theid);
+	}
+	
+}

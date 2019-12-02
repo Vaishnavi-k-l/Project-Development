@@ -1,0 +1,33 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.ProjectDescStake;
+import com.example.demo.mongorepository.ProjectDescStakeRepository;
+
+
+
+@RestController
+@RequestMapping("/projectDesc")
+@CrossOrigin(origins = "http://localhost:4200")
+
+public class ProjectDescStakeController {
+	
+	@Autowired
+	private ProjectDescStakeRepository projectDescStakeRepository;
+	
+	@PostMapping(value = "/saveProjectDesc")
+	public ProjectDescStake saveProjectDesc(@RequestBody ProjectDescStake projectDescStake) {
+		
+		return projectDescStakeRepository.save(projectDescStake);
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.example.demo.service;
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+	
+	@Autowired
+	private EmployeeRepository employeeRepository;
+	
+	@Override
+	public List<Employee> getAllManagerByAvailability() {
+		// TODO Auto-generated method stub
+		return employeeRepository.getAllManagerByAvailability();
+	}
+
+}

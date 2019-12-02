@@ -1,0 +1,25 @@
+package com.example.demo;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.Employee;
+
+@RestController
+public class MainController
+{
+
+	@Autowired
+	private IntegrationClient integrationClient;
+	
+	@GetMapping(value="/getEmployees")
+	public Collection<Employee> getAllEmployees(@PathVariable (value = "fname") string fname)
+	{
+		return integrationClient.getEmployees(fname);
+	}
+	
+}

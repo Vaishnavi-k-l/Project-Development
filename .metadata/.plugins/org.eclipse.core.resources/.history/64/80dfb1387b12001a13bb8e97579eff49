@@ -1,0 +1,14 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.demo.model.Employee;
+
+public interface ManagerService 
+{
+	@GetMapping("/employee/getManagersByAvailability")
+	public List<Employee> getManagersByAvailability();
+	
+}
