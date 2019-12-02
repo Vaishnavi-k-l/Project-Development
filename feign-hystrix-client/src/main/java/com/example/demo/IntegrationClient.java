@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import java.util.Arrays;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -12,18 +13,24 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.demo.model.ApiResponse;
+import com.example.demo.model.AuthToken;
 import com.example.demo.model.Employee;
 import com.example.demo.model.EmployeeSkills;
+import com.example.demo.model.LoginUser;
 import com.example.demo.model.Project;
 import com.example.demo.model.ProjectDescStake;
 import com.example.demo.model.ProjectMember;
 import com.example.demo.model.Skills;
 import com.example.demo.model.Subtask;
 import com.example.demo.model.Task;
+import com.example.demo.service.LoginService;
 import com.example.demo.service.ManagerService;
 import com.example.demo.service.ProjectManagementServiceClient;
 import com.example.demo.service.SubtaskService;
+
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @Component
@@ -38,6 +45,9 @@ public class IntegrationClient {
 
 	@Autowired
 	private ManagerService managerService;
+	
+	@Autowired
+	private LoginService  loginService;
 
 	// *************************SEARCHING AN
 	// EMPLOYEE***********************************
@@ -377,6 +387,17 @@ public class IntegrationClient {
 		return this.managerService.getAllMembers();
 	}
 
-		
+	
+	//**********************************LOGIN**********************************
+	public ApiResponse<AuthToken> register(LoginUser loginUser)
+	{
+		return this.loginService.register(loginUser);
+	}
+	 
+	
+	public boolean signupSuccess(LoginUser user)
+	{
+		return this.loginService.signupSuccess(user);
+	}
 
 }

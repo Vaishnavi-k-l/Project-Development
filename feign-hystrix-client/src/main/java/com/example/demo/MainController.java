@@ -12,10 +12,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.model.ApiResponse;
+import com.example.demo.model.AuthToken;
 import com.example.demo.model.Employee;
 import com.example.demo.model.EmployeeSkills;
+import com.example.demo.model.LoginUser;
 import com.example.demo.model.Project;
 import com.example.demo.model.ProjectDescStake;
 import com.example.demo.model.ProjectMember;
@@ -277,5 +281,20 @@ public class MainController
 		return this.integrationClient.getAllMembers();
 	}
 
+	
+	//****************************LOGIN SEVICES********************************
+	
+	@RequestMapping(value = "/token/generate-token", method = RequestMethod.POST)
+	public ApiResponse<AuthToken> register(@RequestBody LoginUser loginUser)
+	{
+		return this.integrationClient.register(loginUser);
+	}
+	 
+	 
+	@RequestMapping(value="token/send-email")
+	public boolean signupSuccess(@RequestBody LoginUser user)
+	{
+		return this.integrationClient.signupSuccess(user);
+	}
 	
 }
