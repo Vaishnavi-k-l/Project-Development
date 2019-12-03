@@ -3,6 +3,7 @@ package com.example.demo;
 import java.util.Arrays;
 
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -185,14 +187,19 @@ public class IntegrationClient {
 
 	// To fetch the subtasks
 
-	public List<Subtask> getAllSubtasksFallback(Long projectId, Long taskId) {
-		System.out.println("=======getSubtasksFallback=========");
-		return Arrays.asList();
+	
+
+	//@HystrixCommand(fallbackMethod ="getAllSubtasksProjFallback" )
+	public List<Subtask> getAllSubtasksProj(Long projectId, Long taskId)
+	{
+		log.info("Id" + projectId + "Taskid" + taskId);
+		return this.projectManagementServiceClient.getAllSubtasksProj(projectId, taskId);
 	}
 
-	@HystrixCommand(fallbackMethod = "getAllSubtasks")
-	public List<Subtask> getAllSubtasksProj(Long projectId, Long taskId) {
-		return this.projectManagementServiceClient.getAllSubtasksProj(projectId, taskId);
+	public List<Subtask> getAllSubtasksProjFallback(Long projectId, Long taskId)
+	{
+		System.out.println("=======getSubtasksFallback=========");
+		return Arrays.asList();
 	}
 
 	// ******************************************************************
@@ -277,8 +284,9 @@ public class IntegrationClient {
 		return obj;
 	}
 
-	@HystrixCommand(fallbackMethod = "saveProjectFallback")
+	//@HystrixCommand(fallbackMethod = "saveProjectFallback")
 	public Project saveProject(Project project) {
+		System.out.println("inte");
 		return this.managerService.saveProject(project);
 	}
 
@@ -388,5 +396,22 @@ public class IntegrationClient {
 	}
 
 	
+	public void saveProjectMember(ProjectMember projectMember)
+	{
+		 this.managerService.saveProjectMember(projectMember);
+	}
+	
+
+	
+	public List<ProjectMember> getAll()
+	{
+		return this.managerService.getAll();
+	}
+	
+	
+	public List<ProjectMember> getAllMembersOfAProject(Long project)
+	{
+		return this.managerService.getAllMembersOfAProject(project);
+	}
 
 }

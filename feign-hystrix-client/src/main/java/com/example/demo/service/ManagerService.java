@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import java.util.List;
 
+
 import java.util.Optional;
 
 import org.springframework.cloud.openfeign.FeignClient;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.example.demo.model.EmployeeSkills;
+import com.example.demo.model.ProjectMember;
 import com.example.demo.model.Employee;
 import com.example.demo.model.Project;
 import com.example.demo.model.ProjectDescStake;
@@ -94,5 +96,17 @@ public interface ManagerService
 	//To get Employees by availability
 	@GetMapping( value =  "/getMembersByAvailability")
 	public List<Employee> getAllMembers();
+	
+	
+	@PostMapping(value = "/projectMember/saveProjectMember")
+	public void saveProjectMember(@RequestBody ProjectMember projectMember);
+	
+
+	@GetMapping("/projectMember/getProjectMember")
+	public List<ProjectMember> getAll();
+	
+	
+	@GetMapping("/projectMember/getAllMembersOfAProject/{project}")
+	public List<ProjectMember> getAllMembersOfAProject(@PathVariable Long project);
 	
 }

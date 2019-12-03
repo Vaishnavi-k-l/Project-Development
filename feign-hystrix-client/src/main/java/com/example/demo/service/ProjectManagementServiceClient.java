@@ -3,12 +3,15 @@ package com.example.demo.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.demo.IntegrationClient;
 import com.example.demo.model.Employee;
 import com.example.demo.model.Project;
 import com.example.demo.model.ProjectDescStake;
@@ -19,6 +22,7 @@ import com.example.demo.model.Task;
 @FeignClient("admin-view")
 public interface ProjectManagementServiceClient
 {
+
 	
 	//Seraching an employee
 	@GetMapping("/api/search")
@@ -80,8 +84,9 @@ public interface ProjectManagementServiceClient
 	
 	//access Subtask database
 	
-	@RequestMapping("/api/getsubtasks/{projectId}/{taskId}")
-	public List<Subtask> getAllSubtasksProj(@PathVariable (value="projectId") long projectId, @PathVariable (value="taskId") long taskId);
+		
+	@GetMapping("/api/getsubtasks/{projectId}/{taskId}")
+	public List<Subtask> getAllSubtasksProj(@PathVariable Long projectId, @PathVariable Long taskId);
 	
 	
 	//****************************TASK*******************************

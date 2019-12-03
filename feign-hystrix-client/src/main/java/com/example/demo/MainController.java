@@ -119,7 +119,7 @@ public class MainController
 	}
 
 	
-	@GetMapping("/getAllProjects")
+	@GetMapping("/getProjectDetails")
 	public List<Project> getAllProjects()
 	{
 		return integrationClient.getAllProjects();
@@ -156,9 +156,10 @@ public class MainController
 	//*********************************************************************************
 	
 	//To fetch all subtaks for a project
-	@GetMapping(value="/getAllsubtasksproj/{projectId}/{taskId}")
-	public List<Subtask> getAllSubtasksProj(@PathVariable (value="projectId") long projectId, @PathVariable (value="taskId") long taskId)
+	@GetMapping("/getsubtasks/{projectId}/{taskId}")
+	public List<Subtask> getAllSubtasksProj(@PathVariable (value = "projectId") Long projectId, @PathVariable (value = "taskId") Long taskId)
 	{
+		System.out.println("yes");
 		return this.integrationClient.getAllSubtasksProj(projectId, taskId);
 	}
 	
@@ -201,16 +202,18 @@ public class MainController
 	}
 	
 	
-	@GetMapping("/project/getAllProjects")
+	@GetMapping("/project/Project")
 	public List<Project> getAllProjectsForMgr()
 	{
 		return this.integrationClient.getAllProjects();
 	}
 	
 	
-	@PostMapping("/project/saveProject")
+	@PostMapping("/project/Project")
 	public Project saveProject(@RequestBody Project project)
 	{
+		
+		System.out.println("yes");
 		return this.integrationClient.saveProject(project);
 	}
 	
@@ -284,6 +287,27 @@ public class MainController
 	}
 
 	
+	//To save project memebr
+	@PostMapping(value = "/projectMember/saveProjectMember")
+	public void saveProjectMember(@RequestBody ProjectMember projectMember)
+	{
+		 this.integrationClient.saveProjectMember(projectMember);
+	}
 	
+
+	//To list all project members
+	@GetMapping("/projectMember/getProjectMember")
+	public List<ProjectMember> getAll()
+	{
+		return this.integrationClient.getAll();
+	}
+	
+	
+	//To fetch all project members belonging to a project
+	@GetMapping("/projectMember/getAllMembersOfAProject/{project}")
+	public List<ProjectMember> getAllMembersOfAProject(@PathVariable Long project)
+	{
+		return this.integrationClient.getAllMembersOfAProject(project);
+	}
 	
 }
