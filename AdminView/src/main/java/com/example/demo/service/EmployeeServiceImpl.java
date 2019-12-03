@@ -16,6 +16,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeRepository employeeRepository;
 	
 
+	@Override
+	public List<Employee> getAllEmployee() {
+		// TODO Auto-generated method stub
+		return employeeRepository.findAll();
+	}
+	
 
 	@Override
 	public List<Employee> findByFirstName(String fname) {
@@ -23,12 +29,5 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeRepository.findEmp(fname);
 	}
 
-
-
-	@Override
-	public List<Employee> getAllEmployee() {
-		// TODO Auto-generated method stub
-		return employeeRepository.findAll();
-	}
 
 }

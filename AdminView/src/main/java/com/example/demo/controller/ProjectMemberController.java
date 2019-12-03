@@ -13,7 +13,7 @@ import com.example.demo.entity.ProjectMember;
 import com.example.demo.repository.ProjectMemberRepository;
 import com.example.demo.service.ProjectMemberService;
 
-@CrossOrigin(origins = "http://localhost:1234")
+@CrossOrigin(origins = "http://172.18.8.205:4200")
 @RestController
 @RequestMapping("/api")
 public class ProjectMemberController {

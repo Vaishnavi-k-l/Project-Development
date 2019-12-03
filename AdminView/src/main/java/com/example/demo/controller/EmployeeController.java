@@ -15,7 +15,7 @@ import com.example.demo.entity.EmployeeSkills;
 import com.example.demo.service.EmployeeService;
 import com.example.demo.service.EmployeeSkillsService;
 
-@CrossOrigin(origins = "http://localhost:1234")
+@CrossOrigin(origins = "http://172.18.8.205:4200")
 @RestController
 @RequestMapping("/api")
 public class EmployeeController {
@@ -41,11 +41,11 @@ public class EmployeeController {
 		return ch;
 	}
 	
-	@GetMapping("/search/skills/{theId}")
+	/*@GetMapping("/search/skills/{theId}")
 	public List<EmployeeSkills> getEmpSkills(@PathVariable Long theId)
 	{
 		List<EmployeeSkills> sk = employeeSkillsService.getEmployeeSkills(theId);
 		return sk;
-	}
+	}*/
 
 }

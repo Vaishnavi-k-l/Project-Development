@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,8 @@ import com.example.demo.service.SubtaskService;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-@CrossOrigin(origins = "http://localhost:1234")
+
+@CrossOrigin(origins = "http://172.18.8.205:4200")
 @RestController
 @RequestMapping("/api")
 public class SubtaskController 

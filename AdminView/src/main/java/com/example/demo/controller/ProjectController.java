@@ -25,7 +25,7 @@ import com.example.demo.repository.ProjectRepository;
 import com.example.demo.service.ProjectMongoService;
 import com.example.demo.service.ProjectService;
 
-@CrossOrigin(origins = "*",maxAge = 3600)
+@CrossOrigin(origins = "http://172.18.8.205:4200",maxAge = 3600)
 @RestController
 @RequestMapping("/api")
 public class ProjectController {

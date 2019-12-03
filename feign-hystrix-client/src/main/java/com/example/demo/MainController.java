@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,6 +30,7 @@ import com.example.demo.model.Task;
 import com.example.demo.service.SubtaskService;
 
 @RestController
+@CrossOrigin("*")
 public class MainController
 {
 
@@ -39,7 +41,7 @@ public class MainController
 	//==========================================================================
 	
 	//To get all employees
-	@GetMapping(value = "/serachEmp")
+	@GetMapping(value="/searchEmpData")
 	public List<Employee> getAllEmployees()
 	{
 		return this.integrationClient.getAllEmployees();
@@ -47,7 +49,7 @@ public class MainController
 	
 	
 	//To get all employees by fname
-	@GetMapping(value="/getEmployees/{fname}")
+	@GetMapping(value="/searchEmpData/{fname}")
 	public List<Employee> getEmployeeByName(@PathVariable (value = "fname") String fname)
 	{
 		return integrationClient.getEmployees(fname);
@@ -56,7 +58,7 @@ public class MainController
 	//**********************************************************************
 	
 	//To fetch all Project Details
-	@GetMapping(value="/getProjectDetails")
+	@GetMapping(value="/getProjectDetails/completed")
 	public List<Project> getAllProjectDetails()
 	{
 		return integrationClient.getProjectDetiails();
@@ -64,14 +66,14 @@ public class MainController
 	
 	
 	//To fetch project by id from mysql
-	@GetMapping(value = "/findBysqlId/{sqlId}")
+	@GetMapping(value = "/getProjectDetails/{sqlId}")
 	public List<Project> getProjectByIdSQL(@PathVariable  Long sqlId)
 	{
 		return this.integrationClient.findProjectByIdSQL(sqlId);
 	}
 		
 	//To fetch project by id from mongo
-	@GetMapping(value = "/getByIdMongo/{theId}")
+	@GetMapping(value = "/getProjectDetails/mongodb/{theId}")
 	public List<ProjectDescStake> getProjectByIdMongo(@PathVariable (value ="theId") Long theId)
 	{
 		return this.integrationClient.findProjectByIdMongo(theId);
@@ -87,7 +89,7 @@ public class MainController
 		
 	
 	//To fetch ongoing projects
-	@GetMapping(value = "/getOngoingProjects")
+	@GetMapping(value = "/getProjectDetails/ongoing")
 	public List<Project> getOngoingProjects()
 	{
 		return integrationClient.getOngoingProjects();
@@ -282,19 +284,6 @@ public class MainController
 	}
 
 	
-	//****************************LOGIN SEVICES********************************
 	
-	@RequestMapping(value = "/token/generate-token", method = RequestMethod.POST)
-	public ApiResponse<AuthToken> register(@RequestBody LoginUser loginUser)
-	{
-		return this.integrationClient.register(loginUser);
-	}
-	 
-	 
-	@RequestMapping(value="token/send-email")
-	public boolean signupSuccess(@RequestBody LoginUser user)
-	{
-		return this.integrationClient.signupSuccess(user);
-	}
 	
 }

@@ -2,6 +2,7 @@ package com.example.demo;
 
 import java.util.Arrays;
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +27,7 @@ import com.example.demo.model.ProjectMember;
 import com.example.demo.model.Skills;
 import com.example.demo.model.Subtask;
 import com.example.demo.model.Task;
-import com.example.demo.service.LoginService;
+
 import com.example.demo.service.ManagerService;
 import com.example.demo.service.ProjectManagementServiceClient;
 import com.example.demo.service.SubtaskService;
@@ -46,8 +47,7 @@ public class IntegrationClient {
 	@Autowired
 	private ManagerService managerService;
 	
-	@Autowired
-	private LoginService  loginService;
+	
 
 	// *************************SEARCHING AN
 	// EMPLOYEE***********************************
@@ -388,16 +388,5 @@ public class IntegrationClient {
 	}
 
 	
-	//**********************************LOGIN**********************************
-	public ApiResponse<AuthToken> register(LoginUser loginUser)
-	{
-		return this.loginService.register(loginUser);
-	}
-	 
-	
-	public boolean signupSuccess(LoginUser user)
-	{
-		return this.loginService.signupSuccess(user);
-	}
 
 }
