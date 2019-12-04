@@ -39,6 +39,7 @@ public class SubtaskServiceImpl implements SubtaskService {
 
 	@Override
 	public List<Subtask> getAllSubtasks(Long empId) {
+		//return subtaskdao.getAllSubtasks(empId);
 		List<Subtask> selected = new ArrayList<Subtask>();
 		Long id = 2L;
 		Optional<Employee> emp = empRepo.findById(empId);
@@ -53,7 +54,7 @@ public class SubtaskServiceImpl implements SubtaskService {
 		}
 		System.out.println(selected);
 		return selected;
-
+		
 	}
 
 	

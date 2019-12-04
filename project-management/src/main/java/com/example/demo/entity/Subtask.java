@@ -51,9 +51,10 @@ public class Subtask
 	@Column(name = "due_date")
 	private Date dueDate;
 	
-	@Column(name = "progress_percentage")
+	@Column(name = "progress_percentage",columnDefinition = "bigint default 0")
 	private Long progressPercentage;
 	
-	@Column(name = "comments")
-	private String comments;
+	@Column(name = "comment")
+	private String comment;
+
 }

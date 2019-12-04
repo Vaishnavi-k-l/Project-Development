@@ -6,10 +6,13 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -42,10 +45,6 @@ public class Project implements Serializable
 	@Column(name = "project_name")
 	private String name;
 	
-	//@Lob
-	@NotNull
-	@Column(name = "project_desc", columnDefinition = "CLOB")
-	private String description;
 	
 	@NotNull
 	@Column(name = "start_date")
@@ -55,13 +54,20 @@ public class Project implements Serializable
 	@Column(name = "end_date")
 	private Date endDate;
 	
-	//@Lob
-	@Column(name = "stakeholders", columnDefinition = "CLOB")
-	private String stakeholders;
+	@NotNull
+	@Column(name="githubLink")
+	private String githubLink;
+	
+	@NotNull
+	@Column(name="budget")
+	private Long budget;
 	
 	@NotNull
 	@Column(name = "is_completed", columnDefinition = "boolean default 0")
 	private boolean isCompleted;
 	
+	@ManyToOne(fetch = FetchType.LAZY,optional=false,targetEntity = Employee.class)
+    @JoinColumn(name="manager_id")
+	private Employee managerId;
 	
 }

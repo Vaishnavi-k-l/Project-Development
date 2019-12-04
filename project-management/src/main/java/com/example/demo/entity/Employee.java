@@ -13,6 +13,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,6 +29,7 @@ import lombok.Setter;
 @Getter
 @Setter
 //@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Employee implements Serializable
 {
 	@Id
@@ -45,13 +47,7 @@ public class Employee implements Serializable
 	@Column(name = "last_name")
 	private String lastName;
 	
-	@Lob
-	@Column(name = "skills", columnDefinition = "CLOB")
-	private String skills;
 	
-	@NotNull
-	@Column(name = "designation")
-	private String designation;
 	
 	@NotNull
 	@Column(name = "user_type")
@@ -68,4 +64,7 @@ public class Employee implements Serializable
 	@NotNull
 	@Column(name = "availability", columnDefinition="boolean default 1")
 	private boolean availability;
+	
+	@Column(name = "eul_agreement", columnDefinition="boolean default 0")
+	private boolean eulAgreement; 
 }

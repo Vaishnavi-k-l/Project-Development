@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
 import org.hibernate.query.Query;
+
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Modifying;
@@ -22,6 +23,7 @@ import com.example.demo.repository.TaskRepository;
 @Repository
 public class SubtaskDAOImpl implements SubtaskDAO {
 
+	@Autowired
 	private EntityManager entityManager;
 	@Autowired
 	private SubTaskRepository subtaskRepository;
@@ -34,59 +36,7 @@ public class SubtaskDAOImpl implements SubtaskDAO {
 		this.entityManager = entityManager;
 	}
 
-	/*@Override
-	@Transactional
-	@Modifying
-	public void updateProgress(Long subtaskId) {
-		Session currentSession = entityManager.unwrap(Session.class);
-		
-		Subtask subtask = entityManager.find(Subtask.class, subtaskId);
-		Long progressPercentage = subtask.getProgressPercentage();
-		
-		Query<Subtask> theQuery = currentSession.createQuery("update Subtask set progressPercentage=:updated where subTaskId=:Id").
-				setParameter("updated", progressPercentage).setParameter("Id", subtaskId);
-				
-		theQuery.executeUpdate();
-		
-		updateTaskProgress(subtaskId, progressPercentage);
-		
-		
-	}
 	
-	public void updateTaskProgress(Long subtaskId, Long progressPercentage)
-	{
-		Long totalProgress = 0L;
-		
-		Subtask subtask = subtaskRepository.findBySubTaskId(subtaskId);
-		//System.out.println(subtask);
-		Task taskobj= subtask.getTaskId();
-		//System.out.println(taskobj);
-		Long taskId = taskobj.getTaskId();
-		//System.out.println(taskId);
-		List<Subtask> subtasks = subtaskRepository.findByTaskId(taskobj);
-		//System.out.println(subtasks);
-		for(Subtask eachtask : subtasks)
-		{
-			//System.out.println(eachtask.getProgressPercentage());
-			totalProgress = totalProgress + eachtask.getProgressPercentage();
-		}
-		System.out.println(totalProgress);
-		
-		Task tasks = entityManager.find(Task.class, taskId);
-		Long subtaskcount =  tasks.getSubTaskCount();
-		System.out.println(subtaskcount);
-		
-		Long updatedval = totalProgress/subtaskcount;
-		System.out.println(updatedval);
-		tasks.setProgress(updatedval);
-		
-		//Optional <Task> tasks = taskRepository.findById(taskId);
-		//System.out.println(tasks);
-		//tasks.g
-		//for(Task task: tasks)
-		
-	}
-	*/
 	public void updateProgress(Long subtaskId, Long progressPercentage, String comment) {
 
 		Session currentSession = entityManager.unwrap(Session.class);
@@ -134,19 +84,18 @@ public class SubtaskDAOImpl implements SubtaskDAO {
 		
 	}
 
-	/*
-	 * @Override public void getAllSubtasks() { Session currentSession =
-	 * entityManager.unwrap(Session.class);
-	 * 
-	 * long someId=1L; //Query<Subtask> theQuery =
-	 * currentSession.createQuery("from Subtask"); Query<Subtask> theQuery =
-	 * currentSession.createQuery("from Subtask s where s.taskId =:otherId").
-	 * setParameter("otherId", someId);
-	 * 
-	 * 
-	 * List<Subtask> subtasks = theQuery.getResultList();
-	 * 
-	 * System.out.println(subtasks.toString()); }
-	 */
+	/*@SuppressWarnings("unchecked")
+	@Override
+	public List<Subtask> getAllSubtasks(Long empId) {
+		Long val = 100L;
+		Session currentSession = entityManager.unwrap(Session.class);
+		Query<Subtask> query = currentSession.createQuery("from Subtask as s join Employee as e on e.employeeId = s.employeeId where e.employeeId=:empId and s.progressPercentage !=:val");
+		
+		query.setParameter("empId", empId);
+	
+		query.setParameter("val", val);
+		return query.getResultList();
+		
+	}*/
 
 }
