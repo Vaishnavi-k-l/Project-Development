@@ -178,7 +178,7 @@ public class MainController
 		return this.integrationClient.getAllSubtasks(empId);
 	}
 	
-	@RequestMapping("/updateProgress/{subtaskId}/{progressPercentage}/{comment}")
+	@PutMapping("/updateProgress/{subtaskId}/{progressPercentage}/{comment}")
 	public void updateProgress(@PathVariable(value = "subtaskId") Long subtaskId, @PathVariable(value = "progressPercentage") Long progressPercentage,
 			@PathVariable(value="comment") String comment)
 	{
