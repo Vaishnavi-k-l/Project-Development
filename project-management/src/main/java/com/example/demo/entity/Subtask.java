@@ -35,7 +35,7 @@ public class Subtask
     @JoinColumn(name="task_id")
 	private Task taskId;	
 	
-	@OneToOne(fetch = FetchType.LAZY, optional=false,targetEntity = Employee.class)
+	@ManyToOne(fetch = FetchType.LAZY, optional=false,targetEntity = Employee.class)
 	@JoinColumn(name = "employee_id")
 	private Employee employeeId;
 	

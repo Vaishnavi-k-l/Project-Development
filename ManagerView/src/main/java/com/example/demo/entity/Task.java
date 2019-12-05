@@ -53,7 +53,7 @@ public class Task implements Serializable
 	@Column(name = "due_date")
 	private Date dueDate;
 	
-	@Column(name = "subtask_count", columnDefinition = "bigint default 0")
+	@Column(name = "sub_task_count", columnDefinition = "bigint default 0")
 	private Long subTaskCount;
 	
 	@Column(name = "progress", columnDefinition = "bigint default 0")

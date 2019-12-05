@@ -13,8 +13,8 @@ spring:
       uri: http://localhost:8765/
 
   jpa:
-    hibernate:
-      ddl-auto: create
+    #hibernate:
+     # ddl-auto: create
     show-sql: true
   data:
     mongodb:

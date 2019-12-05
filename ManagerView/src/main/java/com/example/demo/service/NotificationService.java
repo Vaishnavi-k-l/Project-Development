@@ -90,7 +90,7 @@ public class NotificationService {
 				//System.out.println(userobj.getFirstName()+" "+password);
 				
 				
-				//Sendnotification(userobj, password);
+				Sendnotification(userobj, password);
 				return true;
 				
 			}

@@ -34,6 +34,17 @@ public class Project
 	private boolean isCompleted;
 	
 	private Employee managerId;
+	
+	private String githubLink;
+
+
+	public String getGithubLink() {
+		return githubLink;
+	}
+
+	public void setGithubLink(String githubLink) {
+		this.githubLink = githubLink;
+	}
 
 	public String getName() {
 		return name;

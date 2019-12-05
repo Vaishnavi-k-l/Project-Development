@@ -10321,3 +10321,328 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-12-04 19:36:07,999 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-12-04 19:36:08,018 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-04 19:36:08,026 [Worker-883: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\login-spring\src\test\resources
+2019-12-05 10:28:06,009 [Worker-1049: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:28:06,073 [Worker-1049: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 10:28:06,307 [Worker-1049: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 10:28:06,347 [Worker-1049: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:28:06,358 [Worker-1049: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 10:28:09,075 [Worker-1051: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:28:09,104 [Worker-1051: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 10:28:09,148 [Worker-1051: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 10:28:09,175 [Worker-1051: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:28:09,175 [Worker-1051: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 10:53:10,842 [Worker-1052: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:53:10,853 [Worker-1052: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 10:53:10,863 [Worker-1052: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 10:53:10,868 [Worker-1052: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:53:10,886 [Worker-1052: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 10:53:23,630 [Worker-1032: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:53:23,649 [Worker-1032: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 10:53:23,666 [Worker-1032: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 10:53:23,677 [Worker-1032: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 10:53:23,677 [Worker-1032: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:01:20,822 [Worker-1053: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:01:27,920 [Worker-1053: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:01:34,489 [Worker-1053: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:01:37,454 [Worker-1053: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/main/java
+2019-12-05 11:01:37,466 [Worker-1053: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:01:37,476 [Worker-1053: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:01:37,483 [Worker-1053: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/test/java
+2019-12-05 11:01:37,949 [Worker-1053: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 17 sec
+2019-12-05 11:01:42,913 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:01:45,710 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Login-service:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\login-spring\pom.xml.
+2019-12-05 11:01:48,959 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /login-spring/src/main/java
+2019-12-05 11:01:48,969 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /login-spring/src/main/resources
+2019-12-05 11:01:48,975 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /login-spring/src/main/resources
+2019-12-05 11:01:48,976 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /login-spring/src/test/java
+2019-12-05 11:01:49,567 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2019-12-05 11:01:50,613 [Worker-1057: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:01:50,616 [Worker-1057: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:01:50,681 [Worker-1057: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:01:50,730 [Worker-1057: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:01:50,740 [Worker-1057: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:01:52,458 [Worker-1057: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:01:53,170 [Worker-1057: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Manager-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\pom.xml.
+2019-12-05 11:01:54,777 [Worker-1057: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ManagerView/src/main/java
+2019-12-05 11:01:54,796 [Worker-1057: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ManagerView/src/main/resources
+2019-12-05 11:01:54,803 [Worker-1057: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ManagerView/src/main/resources
+2019-12-05 11:01:54,805 [Worker-1057: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ManagerView/src/test/java
+2019-12-05 11:01:55,324 [Worker-1057: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2019-12-05 11:01:59,653 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:02:04,101 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:02:08,690 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:02:08,958 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Manager-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\pom.xml.
+2019-12-05 11:02:10,633 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /project-management/src/main/java
+2019-12-05 11:02:10,644 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /project-management/src/main/resources
+2019-12-05 11:02:10,654 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /project-management/src/main/resources
+2019-12-05 11:02:10,662 [Worker-1032: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /project-management/src/test/java
+2019-12-05 11:02:11,143 [Worker-1032: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2019-12-05 11:02:12,046 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:12,051 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:02:12,063 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:02:12,079 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:12,088 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:02:12,885 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:12,901 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:02:12,967 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:02:12,991 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:12,991 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\src\test\resources
+2019-12-05 11:02:24,428 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:24,429 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:02:24,473 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:02:24,473 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:24,488 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\login-spring\src\test\resources
+2019-12-05 11:02:31,837 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:31,846 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:02:31,863 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:02:31,887 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:02:31,887 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:13:51,221 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:13:51,225 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:13:51,247 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:13:51,257 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:13:51,265 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:14:16,890 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:14:16,902 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:14:16,924 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:14:16,932 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:14:16,932 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\src\test\resources
+2019-12-05 11:14:36,235 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:14:36,241 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:14:36,251 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:14:36,252 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:14:36,252 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:15:07,036 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:15:07,036 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:15:07,040 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:15:07,055 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:15:07,055 [Worker-1068: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:15:31,464 [Worker-1059: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:15:37,516 [Worker-1059: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:15:41,622 [Worker-1059: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:15:42,392 [Worker-1059: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Manager-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\pom.xml.
+2019-12-05 11:15:45,554 [Worker-1059: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/main/java
+2019-12-05 11:15:45,562 [Worker-1059: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:15:45,571 [Worker-1059: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:15:45,571 [Worker-1059: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/test/java
+2019-12-05 11:15:46,935 [Worker-1059: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 15 sec
+2019-12-05 11:15:46,947 [Worker-1067: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:15:47,940 [Worker-1067: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:15:48,668 [Worker-1067: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:15:48,936 [Worker-1067: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Manager-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\pom.xml.
+2019-12-05 11:15:49,987 [Worker-1067: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ManagerView/src/main/java
+2019-12-05 11:15:49,997 [Worker-1067: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ManagerView/src/main/resources
+2019-12-05 11:15:50,005 [Worker-1067: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ManagerView/src/main/resources
+2019-12-05 11:15:50,012 [Worker-1067: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ManagerView/src/test/java
+2019-12-05 11:15:50,581 [Worker-1067: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2019-12-05 11:15:50,668 [Worker-1061: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:15:51,528 [Worker-1061: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:15:52,304 [Worker-1061: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:15:52,508 [Worker-1061: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Manager-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\pom.xml.
+2019-12-05 11:15:53,555 [Worker-1061: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /project-management/src/main/java
+2019-12-05 11:15:53,563 [Worker-1061: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /project-management/src/main/resources
+2019-12-05 11:15:53,570 [Worker-1061: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /project-management/src/main/resources
+2019-12-05 11:15:53,571 [Worker-1061: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /project-management/src/test/java
+2019-12-05 11:15:54,034 [Worker-1061: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2019-12-05 11:15:57,969 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:15:57,970 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:15:57,994 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:15:58,028 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:15:58,036 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:16:01,199 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:16:01,199 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:16:01,214 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:16:01,223 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:16:01,230 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\src\test\resources
+2019-12-05 11:16:02,703 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:16:02,709 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:16:02,729 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:16:02,750 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:16:02,750 [Worker-1059: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:34:31,697 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:34:31,751 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:34:31,752 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:34:31,777 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:34:31,808 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:36:17,514 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:36:17,561 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:36:17,613 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:36:17,659 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:36:17,661 [Worker-1070: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:48:50,948 [Worker-1064: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:48:50,965 [Worker-1064: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:48:50,991 [Worker-1064: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:48:51,006 [Worker-1064: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:48:51,017 [Worker-1064: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\src\test\resources
+2019-12-05 11:49:01,009 [Worker-1073: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:49:10,877 [Worker-1073: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:49:17,962 [Worker-1073: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:49:18,864 [Worker-1073: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany:zuul-edge-server:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\pom.xml.
+2019-12-05 11:49:24,619 [Worker-1073: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zuul-edge-server/src/main/java
+2019-12-05 11:49:24,634 [Worker-1073: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /zuul-edge-server/src/main/resources
+2019-12-05 11:49:24,644 [Worker-1073: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /zuul-edge-server/src/main/resources
+2019-12-05 11:49:24,673 [Worker-1073: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zuul-edge-server/src/test/java
+2019-12-05 11:49:25,120 [Worker-1073: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 24 sec
+2019-12-05 11:49:30,578 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:49:30,603 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:49:30,604 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:49:30,609 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:49:30,627 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:49:31,213 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:49:31,226 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:49:31,226 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:49:31,235 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:49:31,235 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:49:42,023 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:49:42,023 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:49:42,111 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:49:42,122 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:49:42,136 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\src\test\resources
+2019-12-05 11:50:41,524 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:50:41,538 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:50:41,555 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:50:41,563 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:50:41,563 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:50:50,026 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:50:54,584 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:50:58,849 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:50:59,320 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany:zuul-edge-server:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\pom.xml.
+2019-12-05 11:51:02,445 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/main/java
+2019-12-05 11:51:02,445 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:51:02,445 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:51:02,445 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/test/java
+2019-12-05 11:51:03,294 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 13 sec
+2019-12-05 11:51:14,759 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:51:14,771 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:51:14,837 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:51:14,851 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:51:14,852 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:51:18,232 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:51:18,238 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:51:18,403 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:51:18,417 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:51:18,448 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:51:20,807 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:51:20,819 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:51:20,827 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:51:20,837 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:51:20,838 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\src\test\resources
+2019-12-05 11:53:22,896 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:53:22,896 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:53:22,899 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:53:22,900 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:53:22,901 [Worker-1078: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:53:33,397 [Worker-1079: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 11:53:37,821 [Worker-1079: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 11:53:41,874 [Worker-1079: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 11:53:42,457 [Worker-1079: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany:zuul-edge-server:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\pom.xml.
+2019-12-05 11:53:46,655 [Worker-1079: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/main/java
+2019-12-05 11:53:46,669 [Worker-1079: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:53:46,676 [Worker-1079: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 11:53:46,686 [Worker-1079: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/test/java
+2019-12-05 11:53:47,253 [Worker-1079: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 13 sec
+2019-12-05 11:54:15,375 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:54:15,377 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 11:54:15,426 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:54:15,435 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:54:15,441 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 11:54:16,034 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:54:16,047 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:54:16,047 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:54:16,049 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:54:16,049 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 11:54:18,746 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:54:18,749 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:54:18,749 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 11:54:18,753 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 11:54:18,755 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\src\test\resources
+2019-12-05 12:02:41,413 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:02:41,421 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:02:41,427 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:02:41,480 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:02:41,480 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 12:02:52,491 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 12:03:01,882 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 12:03:06,722 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 12:03:07,392 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany:zuul-edge-server:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\pom.xml.
+2019-12-05 12:03:10,810 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/main/java
+2019-12-05 12:03:10,825 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 12:03:10,833 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 12:03:10,834 [Worker-1078: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/test/java
+2019-12-05 12:03:12,743 [Worker-1078: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 20 sec
+2019-12-05 12:03:21,807 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:03:21,820 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:03:21,912 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:03:21,924 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:03:21,924 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 12:03:24,891 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:03:24,897 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:03:24,897 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:03:24,898 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:03:24,899 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 12:03:27,334 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:03:27,335 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:03:27,335 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:03:27,347 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:03:27,348 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\src\test\resources
+2019-12-05 12:05:08,825 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:08,825 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:05:08,841 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:05:08,852 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:08,858 [Worker-1082: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 12:05:20,269 [Worker-1081: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 12:05:23,824 [Worker-1081: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Admin-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\pom.xml.
+2019-12-05 12:05:28,049 [Worker-1081: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:project-management:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\pom.xml.
+2019-12-05 12:05:28,622 [Worker-1081: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany:zuul-edge-server:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\pom.xml.
+2019-12-05 12:05:31,368 [Worker-1081: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/main/java
+2019-12-05 12:05:31,380 [Worker-1081: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 12:05:31,387 [Worker-1081: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AdminView/src/main/resources
+2019-12-05 12:05:31,396 [Worker-1081: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AdminView/src/test/java
+2019-12-05 12:05:31,899 [Worker-1081: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2019-12-05 12:05:35,782 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:35,784 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:05:35,826 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:05:35,828 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:35,842 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\AdminView\src\test\resources
+2019-12-05 12:05:37,212 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:37,221 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:05:37,227 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:05:37,233 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:37,233 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\project-management\src\test\resources
+2019-12-05 12:05:38,234 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:38,234 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:05:38,247 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:05:38,255 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:05:38,266 [Worker-1081: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\zuul-edge-server\src\test\resources
+2019-12-05 12:43:59,591 [Worker-1096: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:43:59,623 [Worker-1096: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:43:59,650 [Worker-1096: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:43:59,667 [Worker-1096: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:43:59,667 [Worker-1096: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\feign-hystrix-client\src\test\resources
+2019-12-05 12:44:02,621 [Worker-1095: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:44:02,624 [Worker-1095: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:44:02,627 [Worker-1095: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:44:02,627 [Worker-1095: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:44:02,641 [Worker-1095: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\feign-hystrix-client\src\test\resources
+2019-12-05 12:50:23,131 [Worker-1098: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:50:23,147 [Worker-1098: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:50:23,158 [Worker-1098: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:50:23,176 [Worker-1098: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:50:23,176 [Worker-1098: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\src\test\resources
+2019-12-05 12:51:22,490 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:51:22,503 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:51:22,537 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:51:22,569 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:51:22,588 [Worker-1073: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\src\test\resources
+2019-12-05 12:53:00,677 [Worker-1091: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-05 12:53:04,144 [Worker-1091: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Manager-view:0.0.1-SNAPSHOT @ C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\pom.xml.
+2019-12-05 12:53:12,052 [Worker-1091: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ManagerView/src/main/java
+2019-12-05 12:53:12,065 [Worker-1091: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ManagerView/src/main/resources
+2019-12-05 12:53:12,072 [Worker-1091: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ManagerView/src/main/resources
+2019-12-05 12:53:12,080 [Worker-1091: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ManagerView/src/test/java
+2019-12-05 12:53:12,987 [Worker-1091: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2019-12-05 12:53:21,696 [Worker-1101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:53:21,697 [Worker-1101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-05 12:53:21,722 [Worker-1101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-05 12:53:21,736 [Worker-1101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-05 12:53:21,744 [Worker-1101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\b8ibmjava33\Documents\workspace-PROJECT\ManagerView\src\test\resources

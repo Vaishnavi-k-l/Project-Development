@@ -46,7 +46,7 @@ public class SubTaskServiceImpl  implements SubTaskService{
 		
 		
 		//Send mail to the employee
-		//notificationService.SendSubTasknotification(subTask.getEmployeeId());
+		notificationService.SendSubTasknotification(subTask.getEmployeeId());
 		
 		return subtask1;
 	}
