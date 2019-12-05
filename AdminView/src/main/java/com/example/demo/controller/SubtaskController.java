@@ -16,7 +16,7 @@ import com.example.demo.service.SubtaskService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-@CrossOrigin(origins = "http://172.18.8.205:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class SubtaskController 
@@ -24,8 +24,8 @@ public class SubtaskController
 	@Autowired
 	private SubtaskService subtaskService;
 	
-	@RequestMapping("/getsubtasks/{projectId}/{taskId}")
-	public List<Subtask> getAllSubtasks(@PathVariable (value="projectId") long projectId, @PathVariable (value="taskId") long taskId)
+	@GetMapping("/getsubtasks/{projectId}/{taskId}")
+	public List<Subtask> getAllSubtasksProj(@PathVariable (value="projectId") Long projectId, @PathVariable (value="taskId") Long taskId)
 	{
 		return subtaskService.getAllSubtasks(projectId,taskId);
 	}
