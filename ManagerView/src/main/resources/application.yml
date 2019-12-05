@@ -1,5 +1,5 @@
 server:
-  port: 0
+  port: 1188
   
   
 spring:
@@ -33,7 +33,7 @@ spring:
     
   data:
     mongodb:
-      uri: mongodb://127.0.0.1:27017/projectDescStakeDatabase
+      uri:  mongodb+srv://user1:zVcOiZnu2OByw56x@cluster0-egasi.mongodb.net/ProjectManagement?retryWrites=true&w=majority
 
     
     

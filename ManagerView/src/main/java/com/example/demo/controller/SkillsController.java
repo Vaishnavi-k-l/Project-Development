@@ -13,7 +13,7 @@ import com.example.demo.service.SkillsServiceImpl;
 
 @RestController
 @RequestMapping(value = "/skill")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class SkillsController {
 	
 	@Autowired

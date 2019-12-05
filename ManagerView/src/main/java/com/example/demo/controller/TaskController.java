@@ -16,7 +16,7 @@ import com.example.demo.service.TaskServiceImpl;
 
 @RestController
 @RequestMapping(value = "/task")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class TaskController {
 	
 	

@@ -15,7 +15,7 @@ import com.example.demo.service.ProjectDescStakeServiceImpl;
 
 @RestController
 @RequestMapping("/projectDesc")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 
 public class ProjectDescStakeController {
 	

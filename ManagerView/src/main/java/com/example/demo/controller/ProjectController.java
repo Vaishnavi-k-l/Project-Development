@@ -23,7 +23,7 @@ import com.example.demo.service.ProjectServiceImpl;
 
 @RestController
 @RequestMapping(value = "/project")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class ProjectController {
 	private Logger log=LoggerFactory.getLogger(ProjectController.class);
 	@Autowired

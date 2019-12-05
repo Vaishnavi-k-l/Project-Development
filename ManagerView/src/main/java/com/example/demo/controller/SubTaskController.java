@@ -18,7 +18,7 @@ import com.example.demo.service.TaskServiceImpl;
 
 @RestController
 @RequestMapping(value = "/subtask")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class SubTaskController {
 	
 	@Autowired

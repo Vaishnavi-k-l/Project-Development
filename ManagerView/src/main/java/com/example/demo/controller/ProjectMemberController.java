@@ -18,7 +18,7 @@ import com.example.demo.service.ProjectServiceImpl;
 
 @RestController
 @RequestMapping(value = "/projectMember")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class ProjectMemberController {
 	
 	
