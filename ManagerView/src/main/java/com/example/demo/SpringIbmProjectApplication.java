@@ -11,8 +11,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableDiscoveryClient
 
 @EnableMongoRepositories(basePackages = {"com.example.demo.mongorepository"})
-@EnableJpaRepositories (basePackages = {"com.example.demo.mysqlrepository"})
-
+@EnableJpaRepositories (basePackages = {"com.example.demo.mysqlrepository","com.example.demo.repository"})
 
 public class SpringIbmProjectApplication {
 

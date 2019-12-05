@@ -3,19 +3,20 @@ server:
  
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/project_management
-    username: root
-    password: pass@word1 
+    url: jdbc:mysql://project-management.cmbnvqzejn0j.us-east-2.rds.amazonaws.com:3306/project_management?useSSL=false
+    username: admin
+    password: PassworD
+    
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      ddl-auto: update
+    show-sql: true
   application:
     name: admin-view
   cloud:
     config:
       uri: http://localhost:8765/
-
-  jpa:
-    #hibernate:
-     # ddl-auto: create
-    show-sql: true
   data:
     mongodb:
        uri: mongodb+srv://user1:zVcOiZnu2OByw56x@cluster0-egasi.mongodb.net/ProjectManagement?retryWrites=true&w=majority
