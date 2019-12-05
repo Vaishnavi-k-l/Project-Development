@@ -73,11 +73,11 @@ Logger log=LoggerFactory.getLogger(AuthenticationController.class);
        
        
         if(usertype.equals("admin")||(usertype.equals("ADMIN")))
-        return new ApiResponse<>(200, "success",new AuthToken(token, user.getUsername(),userId));
-        else if(usertype.equals("manager"))
-        	return new ApiResponse<>(202, "success",new AuthToken(token, user.getUsername(),userId));
+        return new ApiResponse<>(200, "success",new AuthToken(token, user.getUserType(),userId));
+        else if(usertype.equals("manager") ||(usertype.equals("MANAGER")))
+        	return new ApiResponse<>(202, "success",new AuthToken(token, user.getUserType(),userId));
         else 
-        	return new ApiResponse<>(201, "success",new AuthToken(token, user.getUsername(),userId));
+        	return new ApiResponse<>(201, "success",new AuthToken(token,user.getUserType(),userId));
    
     }
     
