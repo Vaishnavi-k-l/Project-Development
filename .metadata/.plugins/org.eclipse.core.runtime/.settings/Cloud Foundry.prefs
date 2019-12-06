@@ -1,2 +1,8 @@
+//vaishnavikl799@gmail.com\ \:\ https\://api.run.pivotal.io\ \:\ vaishnavikl799-org\ \:\ development\:AAdminView\:CF_JMX_ENABLED=false
+//vaishnavikl799@gmail.com\ \:\ https\://api.run.pivotal.io\ \:\ vaishnavikl799-org\ \:\ development\:AManagerView\:CF_JMX_ENABLED=false
+//vaishnavikl799@gmail.com\ \:\ https\://api.run.pivotal.io\ \:\ vaishnavikl799-org\ \:\ development\:AManagerView\:PROJECT_NAME=ManagerView
+//vaishnavikl799@gmail.com\ \:\ https\://api.run.pivotal.io\ \:\ vaishnavikl799-org\ \:\ development\:Alogin-spring\:CF_JMX_ENABLED=false
+//vaishnavikl799@gmail.com\ \:\ https\://api.run.pivotal.io\ \:\ vaishnavikl799-org\ \:\ development\:Alogin-spring\:PROJECT_NAME=login-spring
+//vaishnavikl799@gmail.com\ \:\ https\://api.run.pivotal.io\ \:\ vaishnavikl799-org\ \:\ development\:Aproject-management\:CF_JMX_ENABLED=false
 eclipse.preferences.version=1
-runTargets=[]
+runTargets=[{"storeCredentials"\:"STORE_NOTHING","runTargetID"\:"vaishnavikl799@gmail.com \: https\://api.run.pivotal.io \: vaishnavikl799-org \: development","selfsigned"\:"false","organization"\:"vaishnavikl799-org","skipSslValidation"\:"false","organization_guid"\:"a17b1594-ddd2-4f71-a864-0e11e03e3f4d","space_guid"\:"99160a50-f2f0-4102-bbb7-3958f264f514","url"\:"https\://api.run.pivotal.io","space"\:"development","username"\:"vaishnavikl799@gmail.com"}]

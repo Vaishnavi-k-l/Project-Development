@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,19 +29,21 @@ public class ProjectMemberController {
 	@Autowired
 	private ProjectServiceImpl projectServiceImpl;
 	
+	
+	@LoadBalanced
 	@PostMapping(value = "/saveProjectMember")
 	public void saveProjectMember(@RequestBody ProjectMember projectMember) {	
 		
 		 projectMemberServiceImpl.saveProjectMember(projectMember);
 	}
 	
-
+	@LoadBalanced
 	@GetMapping("/getProjectMember")
 	public List<ProjectMember> getAll(){		
 		return projectMemberServiceImpl.getAll();		
 	}
 	
-	
+	@LoadBalanced
 	@GetMapping("/getAllMembersOfAProject/{project}")
 	public List<ProjectMember> getAllMembersOfAProject(@PathVariable Long project){	
 		Project p = projectServiceImpl.getProjectById(project);

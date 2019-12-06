@@ -30,7 +30,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepositoryCustom
 	@Override
 	public List<Employee> findEmp(String value) {
 		
-			String val = "admin";
+			String val = "ADMIN";
 			Query query = entityManager.createQuery("from Employee where userType!=:val and firstName Like :value or lastName Like :value or middleName Like :value or firstName=:vname or lastName=:vname or middleName=:vname");
 			
 			query.setParameter("val", val);

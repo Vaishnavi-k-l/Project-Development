@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,7 +22,7 @@ public class EmployeeSkillsController {
 	@Autowired
 	private EmployeeSkillsServiceImpl employeeSkillServiceImpl;
 	
-	
+	@LoadBalanced
 	@GetMapping(value = "/getEmployeesBySkills/{skillName}")
 	public List<Employee> getEmployeesBySkills(@PathVariable String skillName){
 		
@@ -30,7 +31,7 @@ public class EmployeeSkillsController {
 		
 		
 	}
-	
+	@LoadBalanced
 	@GetMapping(value = "/getEmployeeSkills/{employeeId}")
 	public List<EmployeeSkills> getEmployeeSkills(@PathVariable Long employeeId){
 		

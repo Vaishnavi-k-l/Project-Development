@@ -1,21 +1,21 @@
 server:
-  port: 1188
+  port: 0
   
   
 spring:
   application:
-    name: manager-view
+    name: manager-service
   cloud:
    config:
-     uri: http://localhost:8765/
+    uri: http://localhost:8765/
   datasource:
-    url: jdbc:mysql://project-management.cmbnvqzejn0j.us-east-2.rds.amazonaws.com:3306/project_management?useSSL=false
+    url:  jdbc:mysql://project-management.cmbnvqzejn0j.us-east-2.rds.amazonaws.com:3306/project_management?useSSL=false&serverTimezone=UTC
     username: admin
     password: PassworD
     
   jpa:
     hibernate:
-      dialect: org.hibernate.dialect.MySQL5Dialect
+     # dialect: org.hibernate.dialect.MySQL5Dialect
       ddl-auto: update
     show-sql: true  
   mail:

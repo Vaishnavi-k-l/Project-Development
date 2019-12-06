@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,17 +25,19 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeServiceImpl employeeServiceImpl;
 	
-
+	@LoadBalanced
 	@GetMapping( value =  "/getManagersByAvailability")
 	public List<Employee> getAll(){		
         return employeeServiceImpl.getAllManagerByAvailability();
 	}
 	
+	@LoadBalanced
 	@GetMapping( value =  "/getMembersByAvailability")
 	public List<Employee> getAllMembers(){		
         return employeeServiceImpl.getAllMembersByAvailability();
 	}
 	
+	@LoadBalanced
 	@GetMapping("/EmployeeById/{employeeId}")
 	public Employee getEmployeeById(@PathVariable Long employeeId) {
 		return employeeServiceImpl.getEmployeeById(employeeId);
@@ -42,6 +45,7 @@ public class EmployeeController {
 		
 	}
 	
+	@LoadBalanced
 	@PutMapping("/updateEul")
 	public Employee updateEmployeeEul(@RequestBody Employee employee) {
 		return employeeServiceImpl.updateEmployeeEul(employee);

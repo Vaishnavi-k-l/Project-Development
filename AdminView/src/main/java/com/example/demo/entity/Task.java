@@ -43,9 +43,6 @@ public class Task implements Serializable
 	@Column(name = "description")
 	private String description;
 	
-	@Column(name = "task_description")
-	private String taskDescription;
-	
 	@Column(name = "start_date")
 	private Date startDate;
 	

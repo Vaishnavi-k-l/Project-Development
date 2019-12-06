@@ -13,6 +13,8 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @SuppressWarnings("serial")
@@ -20,11 +22,13 @@ import lombok.Data;
 @Entity
 @Table(name = "employee")
 @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+@ApiModel(description = "Details of employees")
 public class Employee implements Serializable
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "employee_id")
+	@ApiModelProperty(notes = "Id of the employee", name ="employeeId", value = "Id")
 	private Long employeeId;
 	
 	@NotNull

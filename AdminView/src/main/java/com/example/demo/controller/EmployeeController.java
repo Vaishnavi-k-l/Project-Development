@@ -15,7 +15,7 @@ import com.example.demo.entity.EmployeeSkills;
 import com.example.demo.service.EmployeeService;
 import com.example.demo.service.EmployeeSkillsService;
 
-@CrossOrigin(origins = "http://172.18.8.205:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class EmployeeController {

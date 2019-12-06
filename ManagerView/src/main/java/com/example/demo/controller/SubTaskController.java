@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,11 +29,13 @@ public class SubTaskController {
 	@Autowired
 	private TaskServiceImpl taskServiceImpl;
 	
+	@LoadBalanced
 	@PostMapping("/SubTask")
 	public Subtask saveTask(@RequestBody Subtask stask) {	
 		return subtaskServiceImpl.saveSubTask(stask);
 	}
 	
+	@LoadBalanced
 	@GetMapping("/SubTaskByTaskId/{ltaskId}")
 	public List<Subtask> getSubTasksByTaskId(@PathVariable Long ltaskId){
 		

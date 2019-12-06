@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.service.TaskService;
 import com.example.demo.entity.Task;
 
-@CrossOrigin(origins = "http://172.18.8.205:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class TaskController {

@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -29,24 +30,26 @@ public class ProjectController {
 	@Autowired
 	private ProjectServiceImpl projectServiceImpl;	
 	
-
+	@LoadBalanced
 	@GetMapping("/Project")
 	public List<Project> getAll(){		
 		return projectServiceImpl.getAll();		
 	}
 	
+	@LoadBalanced
 	@PostMapping("/Project")
 	public Project saveProject(@RequestBody Project project) {	
 		return projectServiceImpl.saveProject(project);
 	}
 	
+	@LoadBalanced
 	@GetMapping("/ProjectById/{projectId}")
 	public Project getProjectById(@PathVariable Long projectId){		
 		return projectServiceImpl.getProjectById(projectId);		
 	}
 	
 	
-
+	@LoadBalanced
 	@PutMapping("/CompleteProject")
 	public boolean completeProject(@RequestBody Project project) {
 		System.out.println("hhhhhhhhhhh");
